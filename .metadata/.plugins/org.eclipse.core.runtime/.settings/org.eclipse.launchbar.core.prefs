@@ -1,0 +1,17 @@
+LaunchTargetManager/configs/DBInfo=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Demo=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/FetchData=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/InsertData=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/InsertData2=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/InsertData3=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/InsertData4=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/InsertData5=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:DBInfo,org.eclipse.launchbar.core.descriptorType.default\:InsertData,org.eclipse.launchbar.core.descriptorType.default\:InsertData2,org.eclipse.launchbar.core.descriptorType.default\:InsertData3,org.eclipse.launchbar.core.descriptorType.default\:Demo,org.eclipse.launchbar.core.descriptorType.default\:InsertData4,org.eclipse.launchbar.core.descriptorType.default\:FetchData,org.eclipse.launchbar.core.descriptorType.default\:InsertData5
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:DBInfo/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:DBInfo/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:InsertData5/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:InsertData5/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
