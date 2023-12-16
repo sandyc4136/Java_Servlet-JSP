@@ -1,7 +1,13 @@
 package com.cdac.servlet;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Base64;
+import java.util.Scanner;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LoginServlet
  */
-@WebServlet("/login3.cdac")
+@WebServlet("/login2.cdac")
 public class LoginServlet3 extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,17 +27,17 @@ public class LoginServlet3 extends HttpServlet {
 		String email=request.getParameter("email");
 		String pwd = request.getParameter("pwd");
 
-			if(email.equals("sandyc4136@gmail.com") && pwd.equals("123")) {
+
+			if(email.equals("sandyc4136@gmail.com") && pwd.equals("password")) {
 				String  rememberMe=request.getParameter("rememberMe");
 				if(rememberMe!=null && rememberMe.equals("yes")) {
-					String data= Base64.getEncoder().encode((email + ":" + pwd).getBytes()).toString();
+					String data= Base64.getEncoder().encode((email + ":" + pwd.getBytes())).toString();
 					Cookie cookie=new Cookie("loginData", data);
-					cookie.setMaxAge(60*60*24*30); // in seconds
-					response.addCookie(cookie);
+					response.sendRedirect("welcome.html");
 				}	
-				response.sendRedirect("welcome.html");
-			}
 				else
 					response.sendRedirect("login.html");
+		
 	}
+
 }

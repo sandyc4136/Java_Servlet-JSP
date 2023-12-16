@@ -5,7 +5,7 @@
 <title>Login form</title>
 </head>
 <body>
-<form action="login3.cdac">
+<form action="login2.cdac">
 	<label>Enter email :</label>
 	<input type="email" name="email"/>
 	<br><br>
