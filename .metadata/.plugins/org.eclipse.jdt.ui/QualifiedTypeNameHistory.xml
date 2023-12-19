@@ -11,6 +11,15 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="com.cdac.jdbc.ProductDataLoader"/>
+    <fullyQualifiedTypeName name="com.cdac.jdbc.Product"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="com.cdac.servlet.QuestionLoaderServlet"/>
+    <fullyQualifiedTypeName name="com.cdac.jdbc.QuestionLoader"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.cdac.jdbc.Question"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>
