@@ -19,7 +19,11 @@
     <fullyQualifiedTypeName name="com.cdac.servlet.QuestionLoaderServlet"/>
     <fullyQualifiedTypeName name="com.cdac.jdbc.QuestionLoader"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="com.cdac.jdbc.Question"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.cdac.jdbc.Question"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.codegen.IntegerCache"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.x.SyncFlushDeflaterOutputStream"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.Lifecycle"/>
 </qualifiedTypeNameHistroy>

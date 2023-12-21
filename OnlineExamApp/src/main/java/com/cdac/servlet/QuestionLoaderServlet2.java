@@ -18,23 +18,25 @@ import com.cdac.jdbc.QuestionLoader;
  */
 @WebServlet("/QuestionLoaderServlet2")
 public class QuestionLoaderServlet2 extends HttpServlet {
-	
+
 	int qNo;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		QuestionLoader loader=new QuestionLoader();
-		List<Question> list=loader.loadQuestions();
-		Question q = list.get(qNo++);
+		//logic of checking the answer submitted by the user
+		//can be written here also
+		QuestionLoader loader = new QuestionLoader();
+		List<Question> list = loader.loadQuestions();
 		
-		// Obtain the HttpSession object from the request
-		HttpSession session = request.getSession();
-		
-		// Set an attribute named "currentQ" in the HttpSession and assign it the value of the variable 'q'
-		session.setAttribute("currentQ", q);
-
-		// Redirect the response to the "viewQuestion.jsp" page
-		response.sendRedirect("viewQuestion2.jsp");
-		
+		if(qNo < list.size()) {
+			Question q = list.get(qNo++);
+			
+			HttpSession session = request.getSession();
+			session.setAttribute("currentQ", q);
+			
+			response.sendRedirect("viewQuestion2.jsp");
+		}
+		else
+			response.sendRedirect("score.jsp");
 	}
 
 }

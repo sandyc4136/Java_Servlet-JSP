@@ -16,11 +16,11 @@
 		// The session is a way to store and retrieve objects across multiple requests.
 	%>
 
-		Q. <%= q.getQuestion() %> <br /><br /><br>
-		<input type="radio" name="option" value="1" />  <%= q.getOption1() %> <br />
-		<input type="radio" name="option" value="1" />  <%= q.getOption2() %> <br />
-		<input type="radio" name="option" value="1" />  <%= q.getOption3() %> <br />
-		<input type="radio" name="option" value="1" />  <%= q.getOption4() %> <br /><br />
+		Q. <%= q.getQuestion() %> <br /><br />
+		<input type="radio" name="op" value="1" />  <%= q.getOption1() %> <br />
+		<input type="radio" name="op" value="2" />  <%= q.getOption2() %> <br />
+		<input type="radio" name="op" value="3" />  <%= q.getOption3() %> <br />
+		<input type="radio" name="op" value="4" />  <%= q.getOption4() %> <br /><br />
 		 <!-- <a href="">Next Question</a> -->
 		<button type="submit" style="background-color:green; color:white;">Next Question</button>
 		
