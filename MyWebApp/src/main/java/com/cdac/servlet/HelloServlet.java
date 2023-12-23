@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("/Hello.cdac") // Url pattern or servlet mapping
+@WebServlet("/hello.cdac") // Url pattern or servlet mapping
+// If we don't want to use @WebServlet annotation, then we will have to 
+// do the Servlet entry in the web.xml file
 public class HelloServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

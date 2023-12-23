@@ -7,8 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.catalina.Lifecycle;
-
 import com.mysql.cj.protocol.x.SyncFlushDeflaterOutputStream;
 
 /**
@@ -21,7 +19,7 @@ public class LifecycleServlet extends HttpServlet {
 //		System.out.println("init called.....");
 //	}
 	
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		System.out.println("service called......");
 	}

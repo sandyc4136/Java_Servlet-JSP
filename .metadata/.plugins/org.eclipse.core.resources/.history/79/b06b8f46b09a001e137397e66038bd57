@@ -1,9 +1,0 @@
-package com.cdac.jdbc;
-
-public class Demo {
-	int y;
-	public static void main(String[] args) {
-		int x;
-	System.out.println(y);
-	}
-}

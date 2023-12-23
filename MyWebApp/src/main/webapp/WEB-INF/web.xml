@@ -3,19 +3,25 @@
   <display-name>MyWebApp</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <error-page>
-  <error-code>404</error-code>
-  <location>/notfound.html</location>
+  	<error-code>404</error-code>
+  	<location>/notfound.html</location>
   </error-page>
   
   <session-config>
-  <!-- session timeout is given in minutes -->
-  	<session-timeout>5</session-timeout> 
-  </session-config>
+  	<session-timeout>10</session-timeout> 
+  </session-config> 
+  
+  
+ <!--  <servlet>
+  	<servlet-name>hello</servlet-name>
+  	<servlet-class>com.cdac.servlet.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>hello</servlet-name>
+  	<url-pattern>/hello.cdac</url-pattern>
+  </servlet-mapping> --> 
+  
 </web-app>

@@ -18,12 +18,12 @@ public class InputServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String name=request.getParameter("name");
-//		response.getWriter().write("<h1>Hello " + name.toUpperCase() + " </h1>");
+		response.getWriter().write("<h1>Hello " + name.toUpperCase() + " </h1>");
 		
 		// OR
 		
-		PrintWriter out=response.getWriter();
-		out.write("<h1>Hello " + name.toUpperCase() + " </h1>");
+//		PrintWriter out=response.getWriter();
+//		out.write("<h1>Hello " + name.toUpperCase() + " </h1>");
 	}
 
 }
