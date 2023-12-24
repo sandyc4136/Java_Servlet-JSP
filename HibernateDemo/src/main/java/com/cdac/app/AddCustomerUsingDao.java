@@ -10,13 +10,15 @@ import com.cdac.entity.Customer;
 public class AddCustomerUsingDao {
 	public static void main(String[] args) {
 		Customer customer = new Customer();
-		customer.setName("Jackson");
-		customer.setEmail("jackson1234@gmail.com");
-		customer.setCity("Jharsuguda");
-		// customer.setDateOfBirth();
+		customer.setName("Batman");
+		customer.setEmail("batman1234@gmail.com");
+		customer.setCity("Gotham");
+//		customer.setDateOfBirth(1995-02-09);
+		
 		 
 		CustomerDao dao = new CustomerDao();
 		dao.add(customer);
 		
 	}
 }
+ 
