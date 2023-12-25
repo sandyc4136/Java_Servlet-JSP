@@ -2,11 +2,9 @@ package com.cdac.dao;
 
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import javax.persistence.*;
 import com.cdac.entity.Customer;
-import com.mysql.cj.Query;
+
 
 // classes which contain DB specific code are commonly referred as DAO (Data Access Object )
 public class CustomerDao {
