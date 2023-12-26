@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 import com.cdac.entity.Address;
 import com.cdac.entity.Customer;
 import com.cdac.entity.User;
-import javax.persistence.Query;
+import javax.persistence.*;
 
 //this is wrong, we should create separate dao for each entity
 public class UserDao {
@@ -91,6 +91,39 @@ public class UserDao {
 		}
 		finally {
 			emf.close();	
+		}
+	}
+	
+	public List<User> fetchUsersByCity(String city) {
+		EntityManagerFactory emf = null;
+		try {
+
+		emf=Persistence.createEntityManagerFactory("hibernate-demo"); // reference for META-INF/persistence.xml
+		EntityManager em=emf.createEntityManager();
+		
+		Query q = em.createQuery("select u from User u join u.address a where a.city=?1");
+		q.setParameter(1, city);
+		List<User> list = (List<User>) q.getResultList();
+ 		return list;
+		}
+		finally {
+			emf.close();	
+		}
+	}
+	
+	public List<Object[]> fetchUsersByCityV2(String city) {
+		EntityManagerFactory emf = null;
+		try {
+			emf = Persistence.createEntityManagerFactory("hibernate-demo");
+			EntityManager em = emf.createEntityManager();
+	
+			Query q = em.createQuery("select u.name,u.mobileNumber from User u join u.address a where a.city = ?1");
+			q.setParameter(1, city);
+			List<Object[]> users = q.getResultList();
+			return users;
+		}
+		finally {
+			emf.close();
 		}
 	}
 

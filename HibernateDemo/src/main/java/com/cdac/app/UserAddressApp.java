@@ -74,13 +74,28 @@ public class UserAddressApp {
 		System.out.println(user.getMobileNumber());  */
 		
 //-------------------- scenario 3 ------------------------------//
-		
-		List<User> users = Udao.fetchUsersByDomain("%gmail%");
+		//---------- fetch the data -------------//
+	/*	
+		//List<User> users = Udao.fetchUsersByDomain("%gmail%");
+		List<User> users = Udao.fetchUsersByCity("Hyderabad");
 		for(User user : users) {
-		System.out.println(user.getId());
-		System.out.println(user.getName());
-		System.out.println(user.getEmail());
-		System.out.println(user.getMobileNumber()); 
+		System.out.println("-------------------------");
+		System.out.println("Id = "+ user.getId());
+		System.out.println("Name  = "+ user.getName());
+		System.out.println("Email = "+ user.getEmail());
+		System.out.println("Mobile Number = "+ user.getMobileNumber()); 
+		Address addr = user.getAddress();
+		System.out.println("Pincode = "+ addr.getPincode());
+		System.out.println("City = "+ addr.getCity());
+		System.out.println("State = "+ addr.getState());
+		}
+	*/	
+		
+		List<Object[]> users = Udao.fetchUsersByCityV2("Jharsuguda");
+		for(Object[] user : users) {
+			System.out.println("-------------");
+			System.out.println(user[0]);
+			System.out.println(user[1]);
 		}
 	}
 }
