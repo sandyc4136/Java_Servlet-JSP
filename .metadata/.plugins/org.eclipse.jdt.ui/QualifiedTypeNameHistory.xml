@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.Driver"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
-    <fullyQualifiedTypeName name="java.util.Base64"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.cdac.jdbc.ProductDataLoader"/>
@@ -40,11 +35,7 @@
     <fullyQualifiedTypeName name="com.cdac.dao.UserDao"/>
     <fullyQualifiedTypeName name="com.cdac.dao.AddressDao"/>
     <fullyQualifiedTypeName name="com.mysql.cj.Query"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.persistence.TableGenerator"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
     <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="com.cdac.dao.AlbumDao"/>
@@ -53,4 +44,20 @@
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="com.cdac.dao.SongDao"/>
     <fullyQualifiedTypeName name="com.cdac.entity.Song"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.Transaction"/>
+    <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
+    <fullyQualifiedTypeName name="javax.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.Account.Status"/>
+    <fullyQualifiedTypeName name="javax.security.auth.login.AccountException"/>
+    <fullyQualifiedTypeName name="com.cdac.exception.AccountException"/>
+    <fullyQualifiedTypeName name="com.cdac.service.AccountService"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.Account"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.cdac.dao.GenericDao"/>
+    <fullyQualifiedTypeName name="com.cdac.entity.Course"/>
 </qualifiedTypeNameHistroy>

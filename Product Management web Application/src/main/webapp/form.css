@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+body, table{
+	text-align:center;
+}
+
+.container{
+	border: 2px solid black;
+	width: 400px;
+	padding : 20px;
+}
+
+div{
+	width: 400px;
+	text-align:center;
+}
