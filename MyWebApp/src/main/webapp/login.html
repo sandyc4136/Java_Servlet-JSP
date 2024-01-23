@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Login form</title>
+<style type="text/css">
+	button[type=submit]{
+		color:red;
+	}
+	.btn{
+		background-color:yellow;
+	}
+</style>
 </head>
 <body>
 <form action="login3.cdac">
@@ -13,8 +21,16 @@
 	<input type="password" name="pwd"/><br><br>
 	<label>Remember me:</label>
 	<input type="checkbox" name="rememberMe" value="yes"> <br><br>
-	<button type="submit">Login</button>
-	<br>
+	<label>Role :</label>
+	<select name="Role">
+		<option  value="Admin">Admin</option>
+		<option  value="HR" >HR</option>
+		<option  value="Manager">Manager</option>
+	</select><br/><br>
+	<!-- <button type="reset">Reset</button>  -->
+	<button class="btn" type="submit">Login</button>
+	
+	
 </form>
 </body> 
 </html>

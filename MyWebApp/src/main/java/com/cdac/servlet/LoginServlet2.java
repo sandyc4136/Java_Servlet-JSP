@@ -32,7 +32,7 @@ Connection conn = null;
 			
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cdac","root","Ayesha@4136");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cdac","root","Password@123");
 			String sql="select count(id) from users where email=? and password = ?";
 			
 			PreparedStatement stmt=conn.prepareStatement(sql);
